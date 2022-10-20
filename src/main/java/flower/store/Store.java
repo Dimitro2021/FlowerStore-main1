@@ -22,7 +22,8 @@ public class Store {
                     if (Objects.equals(thisFlower.getSepalLength(),
                             flower.getSepalLength())) {
                         String colourToCheck = flower.getColor();
-                        if ((colourToCheck != null) && (!colourToCheck.equals("")) && (!colourToCheck.equals(thisFlower.getColor()))) {
+                        if ((colourToCheck != null) && (!colourToCheck.equals(""))
+                                && (!colourToCheck.equals(thisFlower.getColor()))) {
                             continue;
                         } else {
                             return thisFlower;

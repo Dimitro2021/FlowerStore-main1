@@ -7,10 +7,10 @@ public class StoreTest {
     @Test
     public void testStore() {
         Store store = new Store();
-        int length = 1;
-        int price = 45;
-        Rose rose = new Rose(length, FlowerColor.RED, price);
-        Tulip tulip = new Tulip(length, FlowerColor.RED, price);
+        final int LENGTH = 1;
+        final int PRICE = 45;
+        Rose rose = new Rose(LENGTH, FlowerColor.RED, PRICE);
+        Tulip tulip = new Tulip(LENGTH, FlowerColor.RED, PRICE);
         store.addFlower(rose);
         store.addFlower(tulip);
         Assertions.assertEquals(rose, store.search(rose));
