@@ -15,7 +15,7 @@ public class Store {
     }
 
     public Flower search(Flower flower) {
-        for (Flower thisFlower : allFlowers)
+        for (Flower thisFlower : allFlowers) {
             if (thisFlower.getFlowerType() == flower.getFlowerType()) {
                 if (Objects.equals(thisFlower.getColor(),
                         flower.getColor())) {
@@ -30,7 +30,9 @@ public class Store {
                     }
                 }
             }
-        return null;
+        }
+            return null;
+
     }
 }
 
