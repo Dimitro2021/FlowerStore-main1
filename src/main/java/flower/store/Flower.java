@@ -1,11 +1,13 @@
 package flower.store;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 
 
-@Setter
+@Setter @AllArgsConstructor @NoArgsConstructor
 public class Flower {
     @Getter
     private double sepalLength;
