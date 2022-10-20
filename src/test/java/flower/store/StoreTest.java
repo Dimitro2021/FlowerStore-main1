@@ -11,13 +11,13 @@ public class StoreTest {
 //        final int PRICE = 45;
 //        Rose rose = new Rose(LENGTH, FlowerColor.RED, PRICE);
 //        Tulip tulip = new Tulip(LENGTH, FlowerColor.RED, PRICE);
-        Rose rose = new Rose();
+        Rose rose1 = new Rose();
         Tulip tulip = new Tulip();
-        rose.setColor(FlowerColor.RED);
+        rose1.setColor(FlowerColor.RED);
         tulip.setColor(FlowerColor.BLUE);
 
-        store.addFlower(rose);
+        store.addFlower(rose1);
         store.addFlower(tulip);
-        Assertions.assertEquals(rose, store.search(rose));
+        Assertions.assertEquals(rose1, store.search(rose1));
     }
 }
