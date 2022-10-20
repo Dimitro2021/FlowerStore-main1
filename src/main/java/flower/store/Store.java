@@ -4,25 +4,25 @@ import java.util.Objects;
 
 public class Store {
 
-    public LinkedList<Flower> all_flowers;
+    private LinkedList<Flower> allFlowers;
 
     public Store() {
-        all_flowers = new LinkedList<>();
+        allFlowers = new LinkedList<>();
     }
 
-    public void addFlower(Flower flower){
-        this.all_flowers.add(flower);
+    public void addFlower(Flower flower) {
+        this.allFlowers.add(flower);
     }
 
-    public Flower search(Flower flower){
-        int counter = 0;
-        for (Flower thisFlower : all_flowers) {
+    public Flower search(Flower flower) {
+        for (Flower thisFlower : allFlowers)
             if (thisFlower.getFlowerType() == flower.getFlowerType()) {
-                if (Objects.equals(thisFlower.getColor(), flower.getColor())) {
-                    if (Objects.equals(thisFlower.getSepalLength(), flower.getSepalLength())) {
+                if (Objects.equals(thisFlower.getColor(),
+                        flower.getColor())) {
+                    if (Objects.equals(thisFlower.getSepalLength(),
+                            flower.getSepalLength())) {
                         String colourToCheck = flower.getColor();
-                        if ((colourToCheck != null) && (!colourToCheck.equals(""))
-                                && (!colourToCheck.equals(thisFlower.getColor()))) {
+                        if ((colourToCheck != null) && (!colourToCheck.equals("")) && (!colourToCheck.equals(thisFlower.getColor()))) {
                             continue;
                         } else {
                             return thisFlower;
@@ -30,7 +30,6 @@ public class Store {
                     }
                 }
             }
-        }
         return null;
     }
 }
