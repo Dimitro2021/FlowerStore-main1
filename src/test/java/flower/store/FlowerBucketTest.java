@@ -22,7 +22,7 @@ public class FlowerBucketTest {
     public void testPrice() {
         int price = RANDOM_GENERATOR.nextInt(MAX_PRICE);
         int quantity = RANDOM_GENERATOR.nextInt(MAX_QUANTITY);
-        Rose flower = new Rose(1, FlowerColor.RED, 44);
+        Rose flower = new Rose(1, FlowerColor.RED, 1);
         flower.setPrice(price);
         FlowerPack flowerPack = new FlowerPack(flower, quantity);
         flowerBucket.add(flowerPack);

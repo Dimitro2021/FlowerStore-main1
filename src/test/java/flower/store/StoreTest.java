@@ -2,7 +2,6 @@ package flower.store;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
-import flower.store.Rose;
 
 public class StoreTest {
     @Test
